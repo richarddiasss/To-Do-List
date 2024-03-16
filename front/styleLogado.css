@@ -1,34 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
 body{
 
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #363636;
-    height: 100%;
-    margin: 0px;
+    
+    background-color: #9d9ad9;
+    
+    min-width: 100vw;
+    min-height: 100vh;
     
 }
+
 
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background: #D9D9D9;
-    position: fixed;
+    justify-content: flex-end;
+    background: #9d9ad9;
+    
     width: 100%;
-    top: 0;
-    right: 0;
+    
+    color: white;
+    align-items: end;
+    background: #9d9ad9;
     
     
 }
 
+#logout{
+    margin-left: 700px;
+}
+
+
+
 main{
 
-    
-    height: 50%;
-    margin-top: 180px;
+    margin-top: 200px;
 }
 
 footer{
@@ -46,15 +63,19 @@ footer{
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #D9D9D9;
+    background: white;
     border-radius: 10px;
     width: 30vw;
+    padding: 0.4rem;
+    
     margin: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     
 }
 
 input{
     margin-right: 15px;
+
     
 }
 
@@ -69,7 +90,7 @@ p{
     position: relative;
     top: 0;
     left: 0;
-    background-color: #D9D9D9;
+    background: white;
     display: none;
     align-items: center;
     justify-content: center;
@@ -77,6 +98,8 @@ p{
     border-radius: 10px;
     margin-top: 120px;
     margin-bottom: 0px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .modal {
@@ -101,6 +124,7 @@ p{
     background-color: red;
     color: #fff;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .modalbotao{
@@ -108,6 +132,8 @@ p{
     border: 0;
     margin-top: 10px;
     padding: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .janela-modal.abrir{
@@ -118,6 +144,11 @@ p{
 .modalinput{
     border-radius: 10px;
     border: 0;
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 0.4rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .botaoexcluir{
@@ -129,6 +160,14 @@ p{
     height: 20px;
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
+.imgtarefa{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    cursor: pointer;
 
 }

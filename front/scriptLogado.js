@@ -25,7 +25,7 @@ async function obtendoLista() {
         });
 
         const data = await response.json();
-        console.log(data);
+        
         return data;
 
     } catch (error) {
@@ -41,6 +41,7 @@ async function obtendoLista() {
 async function inserirListaHtml(){
 
     const objetoTarefas = await obtendoLista();
+    console.log(objetoTarefas);
     
     
     //const secao = document.querySelector("main#tarefasId");
@@ -75,6 +76,8 @@ async function inserirListaHtml(){
         areaTexto.appendChild(texto);
         areaCriada.appendChild(areaTexto);
         areaCriada.appendChild(botaodiv);
+
+       
         document.querySelector("main#tarefasId").appendChild(areaCriada);
 
 

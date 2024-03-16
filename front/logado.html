@@ -8,25 +8,32 @@
 </head>
 <body>
     <header>
-        <img src="imagens/octicon_three-bars-16.png" id="tBarras"/>
+        
         <h1>TO DO LIST</h1>
-        <img src="imagens/logout.png" id="logout" onclick="deslogar()"/>
+        <img src="imagens/ic_round-logout (5).png" id="logout" onclick="deslogar()"/>
     </header>
 
-    <div class="janela-modal" id="janela-modal">
-        <div class="modal">
-            <button class="fechar" id="fechar">X</button>
-            <h2>Informe a tarefa a seguir:</h2>
-            <input type="text" class="modalinput"/>
-            <button class="modalbotao" type="button" onclick="adicionarTarefa()">adicionar tarefa</button>
+   
+
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <h2>Informe a tarefa a seguir:</h2>
+                <input type="text" class="modalinput" placeholder="Informe a tarefa"/>
+                <button class="modalbotao" type="button" onclick="adicionarTarefa()">adicionar tarefa</button>
+            </div>
+
         </div>
-    </div>
+
+        <main id="tarefasId">
+
+        </main>
+
+  
+
+
+
     
-    <main id="tarefasId">
-        
-        
-        
-    </main>
     
     
     <footer>

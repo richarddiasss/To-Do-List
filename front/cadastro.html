@@ -8,14 +8,15 @@
 </head>
 <body>
     <div id="cadastro">
-        <h1>Faça seu cadastro</h1>
-        <p>Digite um email:</p>
-        <input type="email" name="inputEmail" id="emailCas">
-        <p>Digite uma senha:</p>
-        <input type="password" name="inputSenha" id="senhaCas">
-        <button id="botaoCas" onclick="cadastrarUsuario()">Finalizar cadastro</button>
+        <h1 id="Todolist">Do your register</h1>
+        
+        <input type="email" name="inputEmail" id="emailCas" placeholder="Enter an email">
+        
+        <input type="password" name="inputSenha" id="senhaCas" placeholder="Enter a password">
+        <button id="botaoCas" onclick="cadastrarUsuario()">Finalize registration</button>
     
-        <input type="button" id="botaoLogin"  value="Fazer login" onclick="mudarPagina()">
+      
+        <p onclick="mudarPagina()" id="botaoLogin">Do login</p>
     </div>
 </body>
 

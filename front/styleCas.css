@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #363636;
+    background-color: #9d9ad9;
+    min-width: 100vw;
+    min-height: 100vh;
     
 }
 
@@ -16,24 +27,34 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #D9D9D9;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 
 }
 
 #emailCas{
     border-radius: 10px;
     width: 300px;
-    height: 20px;
+    height: 30px;
     border: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 0.4rem;
 }   
 
 #senhaCas{
     border-radius: 10px;
     width: 300px;
-    height: 20px;
+    height: 30px;
     margin-bottom: 15px;
     border: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding: 0.4rem;
+    
 }   
 
 p{
@@ -43,12 +64,18 @@ p{
 
 #botaoCas{
     border-radius: 10px;
-    padding: 1%;
+    padding: 0.4rem;
     margin-bottom: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #9d9ad9;
+    cursor: pointer;
 }
 
 #botaoLogin{
     border-radius: 10px;
     padding: 1%;
     margin-top: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    
 }
