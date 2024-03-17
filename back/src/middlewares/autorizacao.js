@@ -8,7 +8,8 @@ async function estarLogado(req, res, next){
     if (!token) return res.status(401).json({ auth: false, message: 'No token provided.' });
    
     try {
-         
+         /*Como a string que decodifica a verificação está oculta, então
+          será preciso criar somente criar outra string para o programa funcionar */
         var verificacao = jwt.verify(token, process.env.SECRET);
         //return res.status(200).json({msg: "token verificado!"});
         //return res.status(200).json(verificacao);

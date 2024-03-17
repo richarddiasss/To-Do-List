@@ -28,6 +28,8 @@ class userController{
             }
 
             if(senha === usuario.senha){
+                /*Como a string que codifica/decodifica a verificação está oculta, então
+          será preciso criar somente criar outra string para o programa funcionar */
                 let token = await jwt.sign( NORMAL_USER, process.env.SECRET, {
                     expiresIn: 300 // expires in 5min
                   })
